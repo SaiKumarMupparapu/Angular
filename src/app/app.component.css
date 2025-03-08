@@ -1,8 +1,12 @@
-h1{
+h1,h3{
     background-color: yellow;
     color: green;
 }
 h2{
     background-color: #f72;
     color: black;
+}
+table,h2,h3{
+    border: 2px solid black;
+    border-radius: 2px;
 }
