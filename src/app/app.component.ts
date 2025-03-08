@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { ClickEventComponent } from './click-event/click-event.component';
 
 
 @Component({
   selector: 'app-root',
-  imports: [],
+  imports: [ClickEventComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
