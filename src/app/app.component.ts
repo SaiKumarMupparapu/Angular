@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { ClickEventComponent } from './click-event/click-event.component';
+import { CounterApplicationComponent } from './counter-application/counter-application.component';
 
 
 @Component({
   selector: 'app-root',
-  imports: [ClickEventComponent],
+  imports: [CounterApplicationComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
