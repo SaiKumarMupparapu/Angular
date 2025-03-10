@@ -1,0 +1,37 @@
+<p>some of the events are click,input,focus,blur,mouseenter,mouseover,mouseleave,etc </p>
+<br> <u>4 types of events </u>
+<ol>
+    <li>Mouse events</li>
+    <ul>
+        <li>Click</li>
+        <li>mouse enter</li>
+        <li>mouse over</li>
+        <li>mouse leave</li>
+    </ul>
+    <li>Keyboard events</li>
+    <ul>
+        <li>Key press</li>
+        <li>Key up</li>
+        <li>Key down</li>
+    </ul>
+    <li>Form events</li>
+    <ul>
+        <li>Submit</li>
+        <li>Focus</li>
+        <li>Blur</li>
+        <li>Input</li>
+    </ul>
+    <li>Window events</li>
+    <ul>
+        <li>Scroll</li>
+    </ul>
+
+</ol>
+<hr>
+<button (click)="handleEvent($event)">click</button>
+
+<h2 (mouseenter)="handleEvent($event)"
+(mouseleave)="handleEvent($event)"
+></h2>
+
+<input  (focus)="handleEvent($event)" (blur)="handleEvent($event)" (input)="handleEvent($event)" type="text" name="user">
