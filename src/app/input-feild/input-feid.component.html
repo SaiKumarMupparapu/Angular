@@ -1,0 +1,7 @@
+<h2>{{userName}}</h2>
+<input 
+#UserNameField
+(input)="setUserName($event)" 
+type="text"
+ placeholder="Enter User Name">
+<button (click)="saveUserName($event)" (click)="handleTemplateRef(UserNameField.value)">Save</button>
