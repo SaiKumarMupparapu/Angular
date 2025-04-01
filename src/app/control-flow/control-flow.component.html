@@ -1,0 +1,21 @@
+<H1>Control Flow | Hide-Show | Toggle </H1>
+
+<button (click)="hide()">Hide</button>
+<button (click)="show()">Show</button>
+<button (click)="toggle()">Toggle</button>
+
+@if(display){
+    <div style="background-color: yellow; width: 100px;height: 100px;"></div>
+}
+<!-- @else {
+    <div style="background-color: green; width: 100px;height: 100px;"></div>
+
+} -->
+<hr>
+<button (click)="divToggle()">Toggle</button>
+@if (divOne) {
+    <div style="width: 100px;height: 100px;background-color: blue;"></div>
+}
+@else {
+    <div style="width: 100px;height: 100px;background-color: red;"></div>
+}
