@@ -13,6 +13,7 @@
 } -->
 <hr>
 <button (click)="divToggle()">Toggle</button>
+<button (click)="divToggle()">{{divOne?'Red':'Blue' }}</button>
 @if (divOne) {
     <div style="width: 100px;height: 100px;background-color: blue;"></div>
 }

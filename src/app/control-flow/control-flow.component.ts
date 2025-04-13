@@ -21,6 +21,8 @@ export class ControlFlowComponent {
     this.display=!this.display;
   }
 
+  
+
   divToggle(){
     this.divOne=!this.divOne;
   }
