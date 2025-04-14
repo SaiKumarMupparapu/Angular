@@ -5,11 +5,12 @@ import { EventsComponent } from './events/events.component';
 import { InputFeidComponent } from './input-feild/input-feid.component';
 import { ControlFlowComponent } from './control-flow/control-flow.component';
 import { SwitchCaseComponent } from './switch-case/switch-case.component';
+import { ForLoopComponent } from './for-loop/for-loop.component';
 
 
 @Component({
   selector: 'app-root',
-  imports: [SwitchCaseComponent],
+  imports: [ForLoopComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
