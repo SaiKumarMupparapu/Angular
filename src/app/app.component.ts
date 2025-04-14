@@ -4,11 +4,12 @@ import { CounterApplicationComponent } from './counter-application/counter-appli
 import { EventsComponent } from './events/events.component';
 import { InputFeidComponent } from './input-feild/input-feid.component';
 import { ControlFlowComponent } from './control-flow/control-flow.component';
+import { SwitchCaseComponent } from './switch-case/switch-case.component';
 
 
 @Component({
   selector: 'app-root',
-  imports: [ControlFlowComponent],
+  imports: [SwitchCaseComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

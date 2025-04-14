@@ -1,0 +1,32 @@
+<h3 style="display: inline;">click on button to change color : </h3>
+<input type="radio" (click)="handleColor('red')" >Red
+<!-- <button (click)="handleColor('red')">Red</button> -->
+<button (click)="handleColor('blue')">Blue</button>
+<input type="radio" (click)="handleColor('yellow')">Yellow
+<!-- <button (click)="handleColor('yellow')">Yellow</button> -->
+<button (click)="handleColor('green')">Green</button>
+<hr>
+<input type="text" placeholder="Enter Color" (input)="handleColorByInput($event)">
+<hr>
+<input #colorCode type="text" placeholder="Enter Color" >
+<button (click)="handleColorByInputButton(colorCode)">Change</button>
+@switch (color) {
+    @case ('red') {
+        <h1 style="background-color: red;">{{color}} Color</h1>
+    }
+    @case ('blue') {
+        <h1 style="background-color: blue;">{{color}} Color</h1>
+       
+    }
+    @case ('green') {
+        <h1 style="background-color: green;">{{color}} Color</h1>
+    }
+    @case ('yellow') {
+        <h1 style="background-color: yellow;">{{color}} Color</h1>
+       
+    }
+    @default {
+        <h1 style="background-color: black; color: white;"> No Color Found </h1>
+       
+    }
+}
