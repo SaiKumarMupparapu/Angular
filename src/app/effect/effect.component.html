@@ -1,0 +1,14 @@
+<p>Effects in Angular</p>
+
+<h1>{{UserName()}}</h1>
+<input #Username type="text" placeholder="enter Name"> 
+ <button (click)="updateName(Username)">Update Username</button>
+
+ <h1>{{num()}}</h1>
+ <button (click)="num.set(num()+1)">Increase</button>
+ @if (display) {
+    <h1 class="head">Even Number</h1>
+ }
+ 
+
+

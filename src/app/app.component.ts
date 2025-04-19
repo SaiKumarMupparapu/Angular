@@ -7,11 +7,12 @@ import { ControlFlowComponent } from './control-flow/control-flow.component';
 import { SwitchCaseComponent } from './switch-case/switch-case.component';
 import { ForLoopComponent } from './for-loop/for-loop.component';
 import { SignalsComponent } from './signals/signals.component';
+import { EffectComponent } from './effect/effect.component';
 
 
 @Component({
   selector: 'app-root',
-  imports: [SignalsComponent],
+  imports: [EffectComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
