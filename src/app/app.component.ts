@@ -8,11 +8,12 @@ import { SwitchCaseComponent } from './switch-case/switch-case.component';
 import { ForLoopComponent } from './for-loop/for-loop.component';
 import { SignalsComponent } from './signals/signals.component';
 import { EffectComponent } from './effect/effect.component';
+import { ContextualVariablesComponent } from './contextual-variables/contextual-variables.component';
 
 
 @Component({
   selector: 'app-root',
-  imports: [EffectComponent],
+  imports: [ContextualVariablesComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

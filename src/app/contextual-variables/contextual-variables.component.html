@@ -1,0 +1,39 @@
+<p>contextual-variables works!</p>
+<table>
+    <thead>
+        <th style="width: 10px">S.no</th>
+        <th  style="width: 100px;">Name</th>
+        
+    </thead>
+    <tbody>
+        @for (user of users; track user;let e=$even;let o=$odd;let i=$index) {
+        @if (e) {
+            <tr class="even">
+                <td>
+                    {{i+1}}
+                </td>
+                <td>
+                    {{user}}
+                </td>
+
+            </tr>
+       
+        }@else {
+            <tr class="odd">
+                <td>
+                    {{i+1}}
+                </td>
+                <td>
+                    {{user}}
+                </td>
+
+            </tr>
+            
+            
+
+        }       
+        } @empty {
+            <h1>No Records Found</h1>
+        }       
+    </tbody>
+</table>
