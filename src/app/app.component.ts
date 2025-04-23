@@ -9,11 +9,12 @@ import { ForLoopComponent } from './for-loop/for-loop.component';
 import { SignalsComponent } from './signals/signals.component';
 import { EffectComponent } from './effect/effect.component';
 import { ContextualVariablesComponent } from './contextual-variables/contextual-variables.component';
+import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 
 
 @Component({
   selector: 'app-root',
-  imports: [ContextualVariablesComponent],
+  imports: [TwoWayBindingComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
