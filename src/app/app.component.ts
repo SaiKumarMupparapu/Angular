@@ -10,11 +10,12 @@ import { SignalsComponent } from './signals/signals.component';
 import { EffectComponent } from './effect/effect.component';
 import { ContextualVariablesComponent } from './contextual-variables/contextual-variables.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
+import { ToDoListComponent } from './to-do-list/to-do-list.component';
 
 
 @Component({
   selector: 'app-root',
-  imports: [TwoWayBindingComponent],
+  imports: [ToDoListComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

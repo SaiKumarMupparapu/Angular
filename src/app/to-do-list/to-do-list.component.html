@@ -1,0 +1,28 @@
+<p>to-do-list works!</p>
+<input type="text" placeholder="enter task" [(ngModel)]="task">
+<button (click)="addTask()" class="btn btn-primary btn-sm btn-hover">Add task</button>
+@if (taskList.length==0) {
+    <h1>No record Found</h1>
+
+}
+@else{
+<table class="table table-bordered table-striped table-sm table-hover">
+    <thead class="table-dark">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Delete Task</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (tk of taskList; track tk.id) {
+            <tr>
+                <td>{{tk.id}}</td>
+                <td>{{tk.name}}</td>
+                <td><button (click)="deleteTask(tk.id)" class="btn btn-danger btn-sm">Remove</button></td>
+            </tr>
+
+        }
+    </tbody>
+</table>
+}
