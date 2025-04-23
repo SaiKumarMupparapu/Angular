@@ -11,11 +11,12 @@ import { EffectComponent } from './effect/effect.component';
 import { ContextualVariablesComponent } from './contextual-variables/contextual-variables.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 import { ToDoListComponent } from './to-do-list/to-do-list.component';
+import { DynamicStylelingComponent } from './dynamic-styleling/dynamic-styleling.component';
 
 
 @Component({
   selector: 'app-root',
-  imports: [ToDoListComponent],
+  imports: [DynamicStylelingComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

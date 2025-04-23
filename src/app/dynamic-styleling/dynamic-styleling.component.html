@@ -1,0 +1,15 @@
+<p>dynamic-styleling works!</p>
+<h1 [style.color]="color" [style.backgroundColor]="backgroungColor">Heading 1</h1>
+
+<h1 [style.fontSize.px]="normalFont">heading 2</h1>
+
+<h1 [style.fontSize]=" zoom ? bigFont : smallFont">heading 3</h1>
+
+<button (click)="toggleFontSize()" class="btn btn-primary">
+    @if (zoom) {
+        Change to Small  
+    }@else {
+        Change to Big 
+    }
+
+</button>
