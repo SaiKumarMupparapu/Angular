@@ -1,0 +1,74 @@
+<p>directives-in-angular works!</p>
+<div class="container border border-danger ">
+
+    <ol>
+        <li *ngFor="let student of students">
+            {{student}}
+        </li>
+    </ol>
+    <hr>
+    <ul>
+        <li *ngFor="let s of studentData">
+            {{s.name}}-{{s.age}}-{{s.email}}
+        </li>
+    </ul>
+</div>
+<hr>
+<h1>NgIf Directives-Structural Directives</h1>
+<div class="container border border-success">
+    <h1 *ngIf="status" >Statues is true</h1>
+
+    <hr>
+    <h1 *ngIf="id==1">Line 1</h1>
+    <h1 *ngIf="id==2">Line 2</h1>
+    <h1 *ngIf="id==3">Line 3</h1>
+    <h1 *ngIf="id==4">Line 4</h1>
+    <button (click)="incId()" class="btn btn-primary" >increate Count</button>
+
+    <hr>
+
+    <button (click)="toggleBtn()" *ngIf="status;else elseBlock" class="btn btn-danger">logOut</button>
+    <ng-template #elseBlock>
+        <button (click)="toggleBtn()" class="btn btn-success">LogIn</button>
+    </ng-template>
+    
+
+</div>
+<hr>
+<h1 class="bg-info" style="display: inline;margin : 10%;">NgSwitch directive</h1>
+<div class="container" style="margin-top: 5%; padding :20px">    
+<input (click)="changeColor('red')" type="radio" >Red
+<input (click)="changeColor('green')" type="checkbox">Green
+<button (click)="changeColor('blue')" class="btn btn-primary btn-hover">Blue</button>
+<button (click)="changeColor('pink')" class="btn btn-warning">Orange</button>
+<button (click)="changeColor('yellow')" class="btn btn-default border">Yellow</button>
+<button (click)="changeColor('')">Nun</button>
+</div>
+<div class="container border border-success" [ngSwitch]="color" style="margin : 5%;">
+    <h1 *ngSwitchCase="'red'" style="background-color: red;">Red Color</h1>
+    <h1 *ngSwitchCase="'green'"style="background-color:green ;">Green Color</h1>
+    <h1 *ngSwitchCase="'blue'"style="background-color: blue;">Blue Color</h1>
+    <h1 *ngSwitchCase="'pink'"style="background-color:Orange;">Orange Color</h1>
+    <h1 *ngSwitchCase="'yellow'"style="background-color: yellow;">Yellow Color</h1>
+
+    <h1 *ngSwitchDefault>No match found</h1>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
