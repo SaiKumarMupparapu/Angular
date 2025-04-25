@@ -14,11 +14,12 @@ import { ToDoListComponent } from './to-do-list/to-do-list.component';
 import { DynamicStylelingComponent } from './dynamic-styleling/dynamic-styleling.component';
 import { DirectivesInAngularComponent } from './directives-in-angular/directives-in-angular.component';
 import { RouterLink, RouterOutlet } from '@angular/router';
+import { HeaderComponent } from './header/header.component';
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,RouterLink],
+  imports: [RouterOutlet,HeaderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
