@@ -13,11 +13,12 @@ import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.compon
 import { ToDoListComponent } from './to-do-list/to-do-list.component';
 import { DynamicStylelingComponent } from './dynamic-styleling/dynamic-styleling.component';
 import { DirectivesInAngularComponent } from './directives-in-angular/directives-in-angular.component';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 
 @Component({
   selector: 'app-root',
-  imports: [DirectivesInAngularComponent],
+  imports: [RouterOutlet,RouterLink],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

@@ -1,4 +1,4 @@
-h1,h3{
+/* h1,h3{
     background-color: yellow;
     color: green;
 }
@@ -9,4 +9,7 @@ h2{
 table,h2,h3{
     border: 2px solid black;
     border-radius: 2px;
+} */
+button{
+    margin: 20px;
 }
