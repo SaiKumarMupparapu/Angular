@@ -5,12 +5,13 @@ import { ContactForRouteComponent } from './contact-for-route/contact-for-route.
 import { HomeComponent } from './home/home.component';
 import { Component } from '@angular/core';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { UserComponent } from './user/user.component';
 
 export const routes: Routes = [
     {path:'login',component:LoginForRouteComponent},
     {path:'about',component:AboutForRouteComponent},
     {path:'contact',component:ContactForRouteComponent},
     {path:'',component:HomeComponent},
-    
+    {path:'user/:id/:name',component:UserComponent},
     {path:'**',component:PageNotFoundComponent}
 ];
