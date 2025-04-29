@@ -1,1 +1,24 @@
-<h1>login-Page</h1>
+<!-- <h1>{{msg}}</h1> -->
+<form>
+    <table>
+        <tr>
+            <td>UserName</td>
+            <td><input type="text" placeholder="Enter UserName" [formControl]="userName"></td>
+           
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" placeholder="Enter password" [formControl]="password"></td>
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td><button (click)="getInfo()">Login</button></td>
+        </tr>
+    </table>
+</form>
+<hr>
+<h1>{{userName.value}}</h1>
+<h1>{{password.value}}</h1>
+<button (click)="getInfo()">Get Info</button>
+<button (click)="setValue()">set Values</button>
