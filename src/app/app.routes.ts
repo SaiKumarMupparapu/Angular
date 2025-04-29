@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { Component } from '@angular/core';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { UserComponent } from './user/user.component';
+import { ProfileComponent } from './profile/profile.component';
 
 export const routes: Routes = [
     {path:'login',component:LoginForRouteComponent},
@@ -13,5 +14,6 @@ export const routes: Routes = [
     {path:'contact',component:ContactForRouteComponent},
     {path:'',component:HomeComponent},
     {path:'user/:id/:name',component:UserComponent},
+    {path:'profile',component:ProfileComponent,data:{name:'shiva'}},
     {path:'**',component:PageNotFoundComponent}
 ];

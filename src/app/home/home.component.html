@@ -1,7 +1,17 @@
 <h1>home Page</h1>
-<ul>
+<!-- <ul>
     @for (user of Users; track user.id) {
         <li> <a routerLink="user/{{user.id}}/{{user.name}}"> {{user.name}} </a> </li>
     }
     
-</ul>
+</ul> -->
+ <!-- type 1 passing data from one component to another by routerLink -->
+<!-- <a [routerLink]="['profile',{name:'sai'}]" style="display:block">Go to profile</a>
+<a [routerLink]="['profile',{name:'Kumar'}]">Go to profile</a> -->
+
+ <!-- type 2 passing data by button  -->
+<!-- <button (click)="goToProf('sai')">Go to profile</button>
+<button (click)="goToProf('Kumar')">Go to profile</button> -->
+
+<!-- type 3 by router File -->
+ <a routerLink="profile">Go to profile</a>
